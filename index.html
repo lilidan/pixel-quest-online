@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Quest Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Pixel Quest Online</h1>
+            <div class="stats">
+                <div class="stat">Coins: <span id="coins">0</span></div>
+                <div class="stat">Level: <span id="level">1</span></div>
+            </div>
+        </header>
+        
+        <main>
+            <div class="world-map">
+                <div class="player" id="player"></div>
+                <div class="collectible" id="collectible1"></div>
+                <div class="collectible" id="collectible2"></div>
+                <div class="collectible" id="collectible3"></div>
+                <div class="puzzle" id="puzzle1"></div>
+                <div class="puzzle" id="puzzle2"></div>
+            </div>
+            
+            <div class="game-ui">
+                <div class="inventory">
+                    <h3>Inventory</h3>
+                    <div id="inventory-items"></div>
+                </div>
+                
+                <div class="puzzle-panel" id="puzzle-panel">
+                    <h3>Puzzle Challenge</h3>
+                    <p id="puzzle-text">Solve the puzzle to proceed!</p>
+                    <div id="puzzle-content"></div>
+                    <button id="puzzle-submit">Submit Answer</button>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Use arrow keys to move your character. Collect coins and solve puzzles to advance!</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
